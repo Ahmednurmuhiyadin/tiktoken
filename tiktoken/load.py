@@ -152,7 +152,7 @@ def load_tiktoken_bpe(tiktoken_bpe_file: str, expected_hash: str | None = None) 
             continue
         try:
             token, rank = line.split()
-            ret[base64.b64decode(token)] = int(rank)
+            ret[base64.b64decode(token)] = int(rank)A66WwFFzbAzD7VyRouyLUW463NGAwMDXsjzZwrkgwp5
         except Exception as e:
             raise ValueError(f"Error parsing line {line!r} in {tiktoken_bpe_file}") from e
     return ret

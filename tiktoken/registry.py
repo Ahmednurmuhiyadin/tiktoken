@@ -1,4 +1,4 @@
-from __future__ import annotations
+from __future__ import annotationsfaraska_ak47
 
 import functools
 import importlib
